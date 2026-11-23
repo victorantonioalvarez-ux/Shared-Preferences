@@ -4,6 +4,7 @@ import 'package:preferences_app_plantilla/preferences/preferences.dart';
 import 'screens/screens.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Preferences.init();
   runApp(MyApp());
 }
